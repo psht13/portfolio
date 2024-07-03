@@ -1,0 +1,60 @@
+:root {
+  /* main colors */
+  --main-text: #fafafa;
+  --button-text: #ed3b44;
+  --arrow: #3b3b3b;
+  --cards: #242527;
+  --background: #1c1d20;
+  --success-message: #3cbc81;
+}
+/*================================================================*/
+
+/* 
+Формат використання:
+color: var(--main-text);
+*/
+
+/*================================================================*/
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  color: var(--main-text);
+  background-color: var(--background);
+}
+
+/* General mobile styles */
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+section {
+  padding: 32px 0;
+}
+
+/* General tablet styles */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* General desktop styles */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+}
