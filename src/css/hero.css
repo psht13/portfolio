@@ -10,7 +10,7 @@
 .container-hero {
   padding-left: 16px;
 }
-p {
+.title {
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ p {
     background-color: url(../img/background-hero/mobile@1x.png);
     padding: 169px 0px 32px;
   }
-  p {
+  .text {
     align-content: center;
     font-weight: 500;
     font-size: 50px;
@@ -91,7 +91,7 @@ p {
     padding: 300px 0px 32px;
     min-height: 1024px;
   }
-  p {
+  .text {
     font-size: 90px;
   }
   .social-list {
@@ -146,7 +146,7 @@ p {
     background-image: url(../img/background-hero/laptop@1x.png);
     padding: 300px 0;
   }
-  p {
+  .text {
     font-size: 90px;
     line-height: 100%;
   }
