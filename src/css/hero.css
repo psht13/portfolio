@@ -10,7 +10,7 @@
 .container-hero {
   padding-left: 16px;
 }
-.title {
+.text {
   margin: 0;
   padding: 0;
 }
@@ -151,28 +151,7 @@
     line-height: 100%;
   }
   .social-list {
-    list-style: none;
-    display: flex;
     gap: 15px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .icon,
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
   }
 
   .contact {
