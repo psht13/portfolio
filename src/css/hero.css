@@ -1,0 +1,20 @@
+.container-hero {
+  max-width: 375px;
+  /* backdrop-filter: blur(100px);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(59, 59, 59, 0.2) 16.67%,
+    rgba(255, 255, 255, 0.2) 100%
+  ); */
+  background-image: url(../img/background-hero/mobile@1x.png);
+}
+.social-list {
+  display: flex;
+  gap: 4;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
