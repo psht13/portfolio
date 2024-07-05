@@ -3,47 +3,39 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 812px;
   margin-right: auto;
   margin-left: auto;
+  height: 100%;
+}
+.container-hero {
   padding-left: 16px;
 }
-/* .container-hero {
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-} */
 p {
   margin: 0;
   padding: 0;
 }
 
 /* Мобільні стилі */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero {
     background-color: url(../img/background-hero/mobile@1x.png);
-    padding: 169px 0px;
+    padding: 169px 0px 32px;
   }
   p {
-    font-family: 'Inter Tight', sans-serif;
+    align-content: center;
     font-weight: 500;
     font-size: 50px;
     line-height: 100%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #fafafa;
   }
 
   .social-list {
     list-style: none;
     display: flex;
     gap: 4px;
-    /* justify-content: space-between;
-    padding-bottom: 32px;
-    gap: 4px;
     padding: 0;
-    margin: 0; */
+    margin: 0;
   }
   .social-list-item {
     display: flex;
@@ -61,8 +53,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
@@ -81,6 +71,8 @@ p {
 
   .list {
     align-self: flex-end;
+    padding-top: 212px;
+    margin-top: auto;
   }
   .icon:hover,
   .contact:hover {
@@ -93,45 +85,49 @@ p {
   }
 }
 /* Планшетні стилі */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .hero {
     background-color: url(../img/background-hero/mobile@1x.png);
+    padding: 300px 0px 32px;
+    min-height: 1024px;
   }
   p {
-    font-size: 3rem;
-    line-height: 1.3;
+    font-size: 90px;
   }
-
   .social-list {
-    list-style: none;
+    justify-content: flex-end;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0;
-    margin: 0;
+    padding-right: 32px;
+    gap: 8px;
+  }
+  .social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
   }
 
   .icon,
   .contact {
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
   }
 
   .contact {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    font-size: 1rem;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
   }
   .icon:hover,
   .contact:hover {
@@ -139,17 +135,21 @@ p {
   }
 
   .list {
+    padding-top: 187px;
     align-items: flex-end;
   }
 }
 
 /* Лаптопні стилі */
 @media (min-width: 1025px) {
-  p {
-    font-size: 4rem;
-    line-height: 1.2;
+  .hero {
+    background-image: url(../img/background-hero/laptop@1x.png);
+    padding: 300px 0;
   }
-
+  p {
+    font-size: 90px;
+    line-height: 100%;
+  }
   .social-list {
     list-style: none;
     display: flex;
