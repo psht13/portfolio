@@ -1,0 +1,193 @@
+.hero {
+  background-image: url(../img/background-hero/mobile@1x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 812px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+}
+/* .container-hero {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+} */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+  .hero {
+    background-color: url(../img/background-hero/mobile@1x.png);
+    padding: 169px 0px;
+  }
+  p {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+  }
+
+  .social-list {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    /* justify-content: space-between;
+    padding-bottom: 32px;
+    gap: 4px;
+    padding: 0;
+    margin: 0; */
+  }
+  .social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 8px;
+    width: 37px;
+    height: 37px;
+  }
+
+  .icon,
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
+
+  .contact {
+    align-items: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    width: 178px;
+    height: 37px;
+    font-size: 0.8rem;
+  }
+
+  .list {
+    align-self: flex-end;
+  }
+  .icon:hover,
+  .contact:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/mobile@2x.png);
+  }
+}
+/* Планшетні стилі */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    background-color: url(../img/background-hero/mobile@1x.png);
+  }
+  p {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  .social-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icon,
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+
+  .contact {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    font-size: 1rem;
+  }
+  .icon:hover,
+  .contact:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .list {
+    align-items: flex-end;
+  }
+}
+
+/* Лаптопні стилі */
+@media (min-width: 1025px) {
+  p {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .social-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icon,
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+
+  .contact {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    font-size: 1rem;
+  }
+
+  .icon:hover,
+  .contact:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .list {
+    align-items: flex-end;
+  }
+}
