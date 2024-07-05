@@ -1,27 +1,42 @@
-<div class="footer-wrapper">
-    <div class="heading-wrapper">
-        <picture>
+<div class="footer-heading-wrapper">
+    <h2 class="footer-heading-pb footer-heading">
+        <picture class=" footer-heading-img-wrapper">
             <source srcset="
-                            ../img/work-together-img/image.jpg    1x,
-                            ../img/work-together-img/image@2x.jpg 2x
-                          " />
-            <img src="../img/work-together-img/image.jpg" alt="Personal photo" />
+                                ../img/work-together-img/image.png   1x,
+                                ../img/work-together-img/image@2x.png 2x
+                                 " media=" (max-width: 767px)" />
+            <source srcset="
+                                ../img/work-together-img/image-big.png   1x,
+                                ../img/work-together-img/image-big@2x.png 2x
+                                " media=" (min-width: 768px)" />
+
+            <img src=" ../img/work-together-img/image.png" alt="Personal photo" class="footer-heading-img" />
         </picture>
+        Let’s<span class="footer-heading-highlight">work</span>
+    </h2>
+    <h2 class="footer-heading">
+        together
+    </h2>
+</div>
 
-        <h2>LET'S <span>WORK</span> <br>
-            TOGETHER</h2>
-    </div>
+<form class="footer-form" id="footer-form">
+    <ul class="footer-form-inputs">
+        <li class="footer-form-inputs-item">
+            <input class="footer-form-input" type="email" name="email" placeholder="clients@gmail.com"
+                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+            <div class="footer-underscore">
+                <span id="message-box"></span>
+            </div>
+        </li>
+        <li class="footer-form-inputs-item">
+            <input class="footer-form-input" type="text" name="comments" placeholder="comments" required>
+            <div class="footer-underscore"></div>
+        </li>
+    </ul>
+    <button class="footer-form-btn" type="submit">Send</button>
+</form>
 
-    <form>
-        <div class="form-inputs">
-            <input type="email" name="email" placeholder="clients@gmail.com">
-            <input type="text" name="comments" placeholder="comments">
-        </div>
-        <button type="submit">Send</button>
-    </form>
-
-    <div class="footer-contacts">
-        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-        <a href="tel:+380111111111">+380 11 1111 111</a>
-    </div>
+<div class="footer-contacts">
+    <a class="footer-contacts-link" href="mailto:lloydjefferson@gmail.com" target="_blank">lloydjefferson@gmail.com</a>
+    <a class="footer-contacts-link" href="tel:+380111111111" target="_blank">+380-11-1111-111</a>
 </div>

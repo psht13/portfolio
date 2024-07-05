@@ -2,6 +2,7 @@
   /* main colors */
   --main-text: #fafafa;
   --button-text: #ed3b44;
+  --hover: #e0373f;
   --arrow: #3b3b3b;
   --cards: #242527;
   --background: #1c1d20;
@@ -17,16 +18,16 @@ color: var(--main-text);
 /*================================================================*/
 
 body {
-  font-family: 'Inter Tight', sans-serif;
   color: var(--main-text);
   background-color: var(--background);
+  font-family: 'Inter Tight', sans-serif;
 }
 
 /* General mobile styles */
 .container {
   max-width: 375px;
-  margin: 0 auto;
   padding: 0 16px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 375px) {
