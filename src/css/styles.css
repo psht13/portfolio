@@ -1,4 +1,5 @@
 /* main styles */
+@import 'accordion-js/dist/accordion.min.css';
 @import url('./reset.css');
 @import url('./general.css');
 @import url('./about-me.css');
