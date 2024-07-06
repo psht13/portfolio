@@ -4,7 +4,7 @@
 .about-intro {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 96px;
+  margin-bottom: 64px;
   gap: 16px;
 }
 .about-intro__left {
@@ -39,10 +39,13 @@
   height: 100%;
   object-fit: cover;
 }
-
+.ac-header {
+  height: 40px;
+}
 .ac .ac-trigger::after {
   content: url(../img/icon-about-0.svg);
   right: 16px;
+  top: 84%;
 }
 .ac .ac-trigger::before {
   display: block;
@@ -61,6 +64,7 @@
 .ac {
   background-color: transparent;
   border: none;
+  margin-top: 0;
 }
 .ac-header {
 }
@@ -72,7 +76,9 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  padding: 0 32px 0 0;
 }
+
 .ac .ac-panel .ac-text {
   font-family: 'Inter Tight', sans-serif;
 
@@ -83,15 +89,17 @@
   color: #fafafa;
 }
 .about-accordion li {
-  padding: 8px 0 32px 0;
+  padding: 32px 0 32px 0;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+.ac .ac-panel .ac-text {
+  padding-right: 68px;
 }
 .ac-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 68px !important;
 }
 .ac-text p {
   width: 100%;
@@ -147,4 +155,29 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+@media screen and (max-width: 1439px) {
+  .about-intro {
+    flex-direction: column;
+  }
+  .swiper1 {
+    max-width: 600px;
+  }
+  .about-slider-container {
+    padding: 64px 0 0;
+  }
+  .about-slider-arrow {
+    top: 144px;
+  }
+  .about-accordion li:first-child .ac-text p {
+    padding-bottom: 16px;
+  }
+  .ac-text p {
+    max-width: 100%;
+  }
+  .ac .ac-panel .ac-text {
+    padding: 8px 0 0;
+  }
+}
+@media screen and (max-width: 375px) {
 }
