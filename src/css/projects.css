@@ -105,12 +105,12 @@
 
 .project-button:hover,
 .project-button:focus {
-  background: #e0373f;
+  background: #ec1d28;
 }
 
 /******** Swiper Styles ********/
 
-.button-nav {
+.project-button-nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,8 +122,8 @@
   display: none;
 }
 
-.button-prev,
-.button-next {
+.project-button-prev,
+.project-button-next {
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 60px;
   padding: 14px;
@@ -133,14 +133,11 @@
   fill: var(--main-text);
 }
 
-.link-slider {
-}
-
 /* Стили для отключенных кнопок */
-.button-next:disabled,
-.button-prev:disabled,
-.button-next.swiper-button-disabled,
-.button-prev.swiper-button-disabled {
+.project-button-next:disabled,
+.project-button-prev:disabled,
+.project-button-next.project-button-disabled,
+.project-button-prev.project-button-disabled {
   cursor: not-allowed;
   pointer-events: none;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -186,7 +183,7 @@
     border-radius: 60px;
   }
 
-  .button-nav {
+  .project-button-nav {
     gap: 20px;
   }
 }
