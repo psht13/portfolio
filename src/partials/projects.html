@@ -15,13 +15,16 @@
             Programming Across Borders: Ideas, Technologies, Innovations
           </p>
 
-          <a class="project-button" href="https://github.com/psht13/portfolio"
+          <a
+            class="project-button"
+            target="_blank"
+            href="https://github.com/psht13/portfolio"
             >See project</a
           >
         </li>
         <!------- Swiper------->
         <li class="projects-block-img">
-          <div class="swiper">
+          <div class="swiper swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <picture>
@@ -31,7 +34,6 @@
                       ./img/projects/desktop/expand@2x.jpg 2x
                     "
                     media="(min-width:1440px)"
-                    type="image/png"
                   />
                   <source
                     srcset="
@@ -39,7 +41,6 @@
                       ./img/projects/tablet/expand@2x.jpg 2x
                     "
                     media="(min-width:768px)"
-                    type="image/png"
                   />
                   <source
                     srcset="
@@ -47,45 +48,81 @@
                       ./img/projects/mobile/expand@2x.png 2x
                     "
                     media="(min-width:375px)"
-                    type="image/png"
                   />
 
                   <img src="./img/projects/mobile/expand.png" alt="Projects" />
                 </picture>
               </div>
-              <!-- <div class="swiper-slide">
+              <div class="swiper-slide">
                 <picture>
                   <source
                     srcset="
-                      ./img/projects/mobile/petl.png,
+                      ./img/projects/desktop/petl.jpg    1x,
+                      ./img/projects/desktop/petl@2x.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/tablet/petl.jpg    1x,
+                      ./img/projects/tablet/petl@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/mobile/petl.png    1x,
                       ./img/projects/mobile/petl@2x.png 2x
                     "
-                    type="image/png"
+                    media="(min-width:375px)"
                   />
-                  <img src="./img/projects/mobile/petl.png" alt="Projects" />
+
+                  <img src="./img/projects/mobile/expand.png" alt="Projects" />
                 </picture>
-              </div> -->
-              <!-- <div class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <picture>
                   <source
                     srcset="
-                      ./img/projects/mobile/vocab.png,
+                      ./img/projects/desktop/vocab.jpg    1x,
+                      ./img/projects/desktop/vocab@2x.jpg 2x
+                    "
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/tablet/vocab.jpg    1x,
+                      ./img/projects/tablet/vocab@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/projects/mobile/vocab.png    1x,
                       ./img/projects/mobile/vocab@2x.png 2x
                     "
-                    type="image/png"
+                    media="(min-width:375px)"
                   />
-                  <img src="./img/projects/mobile/vocab.png" alt="Projects" />
+
+                  <img src="./img/projects/mobile/expand.png" alt="Projects" />
                 </picture>
-              </div> -->
+              </div>
             </div>
           </div>
         </li>
       </ul>
     </div>
-
-    <div class="swiper-button">
-      <div class="swiper-button-prev">P</div>
-      <div class="swiper-button-next">N</div>
+    <div class="button-nav">
+      <div class="button-prev">
+        <svg class="link-slider" width="24" height="24">
+          <use href="./img/projects/sprite.svg#icon-arrow-left2"></use>
+        </svg>
+      </div>
+      <div class="button-next">
+        <svg class="link-slider" width="24" height="24">
+          <use href="./img/projects/sprite.svg#icon-arrow-right2"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
