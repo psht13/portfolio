@@ -25,6 +25,13 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [
+      injectHTML({
+        debug: {
+          logPath: true,
+        },
+      }),
+      FullReload(['./src/**/**.html']),
+    ],
   };
 });
