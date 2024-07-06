@@ -158,14 +158,15 @@
 /*================================================================*/
 
 /* mobile bg */
-.footer-wrapper {
+.footer {
   background: no-repeat;
-  background-image: url(../img/work-together-img/footer-bg-mobile.png);
+  background-image: url(../img/work-together-img/footer-bg.png);
+  background-size: contain;
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .footer-wrapper {
-    background-image: url(../img/work-together-img/footer-bg-mobile@2x.png);
+  .footer {
+    background-image: url(../img/work-together-img/footer-bg@2x.png);
   }
 }
 
