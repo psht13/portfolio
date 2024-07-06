@@ -157,39 +157,17 @@
 /* background */
 /*================================================================*/
 
-/* mobile bg */
-.footer-wrapper {
+/* bg */
+.footer {
   background: no-repeat;
-  background-image: url(../img/work-together-img/footer-bg-mobile.png);
+  background-image: url(../img/work-together-img/footer-bg.png);
+  background-position-x: right;
+  background-size: 45% 100%;
 }
 
-@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .footer-wrapper {
-    background-image: url(../img/work-together-img/footer-bg-mobile@2x.png);
-  }
-}
-
-/* tablet bg */
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  @media screen and (min-resolution: 192dpi) {
-    .footer-wrapper {
-      background-image: url(../img/work-together-img/footer-bg-tablet@2x.png);
-    }
-  }
-  .footer-wrapper {
-    background-image: url(../img/work-together-img/footer-bg-tablet.png);
-  }
-}
-
-/* pc bg */
-@media screen and (min-width: 1440px) {
-  @media screen and (min-resolution: 192dpi) {
-    .footer-wrapper {
-      background-image: url(../img/work-together-img/footer-bg-pc@2x.png);
-    }
-  }
-  .footer-wrapper {
-    background-image: url(../img/work-together-img/footer-bg-pc.png);
+@media screen and (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../img/work-together-img/footer-bg@2x.png);
   }
 }
 
