@@ -16,3 +16,4 @@
         img.classList.add('loaded'); // Добавляем класс после полной загрузки
       };
     }); */
+    import "./js/faq"

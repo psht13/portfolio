@@ -21,6 +21,13 @@ h2 {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.faq-svg-icon {
+  fill: none;
+  stroke: #fafafa;
+  
 }
 
 .faq-list-title {
@@ -28,10 +35,9 @@ h2 {
   color: #FAFAFA;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: left;
-  line-height: 1.5;
 }
 
 .faq-list-item-first {
@@ -49,10 +55,6 @@ h2 {
 .first{
   border-top: 1px solid #fafafa20;
   padding-top: 20px;
-}
-
-.faq-title-button {
-  padding-bottom: 16px;
 }
 
 .faq-list-item-text {
@@ -76,10 +78,11 @@ color: rgba(250, 250, 250, 0.6);
   background-color: transparent;
 }
 
-/* .faq-btn-svg-icon:hover,
+.faq-btn-svg-icon:hover,
 .faq-btn-svg-icon:focus {
-
-} */
+  border: 1px solid #fafafa;
+  transition: 0.5s ease;
+}
 
 
   /* General tablet styles */
@@ -97,19 +100,20 @@ color: rgba(250, 250, 250, 0.6);
 
   .faq-list-item-second {
     padding-top: 32px;
-    padding-bottom: 24px;
+    padding-bottom: 30px;
   }
 
   .faq-list-title {
     width: 574px;
   }
 
-  .last {
+  /* .last {
     width: 450px;
-  }
+  } */
 
   .faq-list-item-text {
     width: 656px;
+    padding-top: 16px;
   }
 
    .first-text {
@@ -122,9 +126,29 @@ color: rgba(250, 250, 250, 0.6);
   }
 
   .faq-title-button {
-    padding-bottom: 16px;
+    padding-bottom: 0;;
+  }
+
+  .faq-btn-svg-icon {
+    width: 40px;
+    height: 40px;
   }
 }
+
+.accordion.active .faq-text-wrap {
+  max-height: 120px;
+  transition: 500ms ease-in-out;
+}
+.faq-text-wrap {
+max-height: 0;
+overflow: hidden;
+transition: max-height 500ms ease;
+}
+
+.accordion.active .faq-svg-icon {
+  transform: rotate(180deg);
+}
+
   /* General desktop styles */
   @media screen and (min-width: 1440px) {
 
@@ -156,8 +180,11 @@ color: rgba(250, 250, 250, 0.6);
     border-right: 1px solid #fafafa20;
   } 
 
-  .last-text {
+   .btn-pad {
     padding-bottom: 20px;
   }
 
+.faq-list-item-text.last-text {
+  padding-top: 24px;
 }
+} 
