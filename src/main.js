@@ -1,8 +1,10 @@
 import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
+
 new Accordion('.accordion-container', {
   openOnInit: [0],
 });
+
 var swiper1 = new Swiper('.swiper1', {
   slidesPerView: 6,
   spaceBetween: 0,
