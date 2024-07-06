@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build --base=/portfolio/",
     "preview": "vite preview"
   },
@@ -15,7 +16,9 @@
   "author": "Pavlo Yurchenko <pashtet.gm@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "modern-normalize": "^2.0.0",
+    "swiper": "^11.1.4",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
