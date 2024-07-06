@@ -5,17 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/portfolio/assets/favicon-30b3351a.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -26,7 +28,7 @@
     
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-c6ca0da5.js">
-    <link rel="stylesheet" href="/portfolio/assets/index-477d6562.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-cb1f3697.css">
   </head>
 <body>
 
@@ -63,6 +65,24 @@
     </div>
 
     <a href="#work-together-section" class="order-project-link">Order the project</a>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu is-open">
+    <div class="mobile-menu-container">
+    <button class="mobile-menu-close-btn">
+      <svg class="icone-close" width="28" height="28">
+        <use href="../img/header-img/icons/icons.svg#icon-x">
+        </use>
+      </svg>
+    </button>
+      <ul class="mobile-nav-menu">
+        <li class="mobile-menu-elem"><a class="menu-elem " href="#about-me">About me</a></li>
+      <li class="mobile-menu-elem"><a class="menu-elem" href="#benefits">Benefits</a></li>
+      <li class="mobile-menu-elem"><a class="menu-elem" href="#projects">Projects</a></li>
+      <li class="mobile-menu-elem"><a class="menu-elem" href="#FAQ">FAQ</a>
+      </ul>
+      <a href="#work-together-section" class="mobile-order-link">Order the project</a>
+    </div>
   </div>
   </div>
  
@@ -543,4 +563,3 @@
 </body>
 
 </html>
-
