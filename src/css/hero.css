@@ -17,6 +17,9 @@
 
 /* Мобільні стилі */
 @media (max-width: 767px) {
+  .container-hero {
+    padding-left: 0px;
+  }
   .hero {
     background-color: url(../img/background-hero/mobile@1x.png);
     padding: 169px 0px 32px;
@@ -37,6 +40,10 @@
     padding: 0;
     margin: 0;
   }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
   .social-list-item {
     display: flex;
     justify-content: center;
@@ -74,9 +81,13 @@
     padding-top: 212px;
     margin-top: auto;
   }
+<<<<<<< Updated upstream
   .icon:hover,
+=======
+
+>>>>>>> Stashed changes
   .contact:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fafafa;
   }
 }
 @media screen and (min-resolution: 192dpi) {
@@ -85,16 +96,18 @@
   }
 }
 /* Планшетні стилі */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .hero {
     background-color: url(../img/background-hero/mobile@1x.png);
     padding: 300px 0px 32px;
     min-height: 1024px;
   }
   .text {
+    align-content: center;
     font-size: 90px;
   }
   .social-list {
+    list-style: none;
     justify-content: flex-end;
     display: flex;
     padding-right: 32px;
@@ -110,13 +123,17 @@
     width: 55px;
     height: 55px;
   }
-
   .icon,
   .contact {
     font-size: 16px;
     display: flex;
     justify-content: center;
+<<<<<<< Updated upstream
     align-items: center;
+=======
+    border-radius: 50%;
+    text-decoration: none;
+>>>>>>> Stashed changes
   }
 
   .contact {
@@ -129,11 +146,14 @@
     width: 223px;
     height: 55px;
   }
+<<<<<<< Updated upstream
   .icon:hover,
-  .contact:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+=======
 
+>>>>>>> Stashed changes
+  .contact:hover {
+    border: 1px solid #fafafa;
+  }
   .list {
     padding-top: 187px;
     align-items: flex-end;
@@ -141,32 +161,54 @@
 }
 
 /* Лаптопні стилі */
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
   .hero {
     background-image: url(../img/background-hero/laptop@1x.png);
-    padding: 300px 0;
+    padding: 300px 0px 32px;
   }
   .text {
+    padding-left: 178px;
     font-size: 90px;
     line-height: 100%;
   }
   .social-list {
+<<<<<<< Updated upstream
     gap: 15px;
   }
 
-  .contact {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    font-size: 1rem;
+=======
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 32px;
+    gap: 8px;
   }
 
-  .icon:hover,
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
+  }
+
+>>>>>>> Stashed changes
+  .contact {
+    display: flex;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+  }
   .contact:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fafafa;
   }
 
   .list {
+    padding-top: 243px;
     align-items: flex-end;
   }
 }
