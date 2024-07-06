@@ -1,3 +1,4 @@
+
 import Accordion from 'accordion-js';
 new Accordion('.accordion-container', {
   openOnInit: [0],
@@ -15,3 +16,4 @@ var swiper1 = new Swiper('.swiper1', {
     // prevEl: '.swiper-button-prev',
   },
 });
+
