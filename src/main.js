@@ -1,6 +1,16 @@
 import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
 import './js/projects';
+import "./js/faq"
+
+
+    // Скрипт для предотвращения мерцания изображений
+    document.querySelectorAll('.swiper-slide img').forEach(img => {
+      img.onload = () => {
+        img.classList.add('loaded'); // Добавляем класс после полной загрузки
+      };
+    }); 
+    
 
 new Accordion('.accordion-container', {
   openOnInit: [0],
