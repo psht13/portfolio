@@ -55,10 +55,7 @@
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    font-weight: bold;
-    color: #fafafa;
-    letter-spacing: -0.02em;
-    font-family: 'Inter Tight', sans-serif;
+    transition: border 250ms ease-in-out;
   }
 
   .contact {
@@ -128,6 +125,7 @@
     justify-content: center;
     border-radius: 50%;
     text-decoration: none;
+    transition: border 250ms ease-in-out;
   }
 
   .contact {
@@ -178,6 +176,7 @@
     padding: 18px 16px;
     width: 55px;
     height: 55px;
+    transition: border 250ms ease-in-out;
   }
 
   .contact {
@@ -187,6 +186,7 @@
     padding: 18px 24px;
     width: 223px;
     height: 55px;
+    transition: border 250ms ease-in-out;
   }
   .icon:hover,
   .contact:hover {
