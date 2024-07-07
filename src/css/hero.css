@@ -5,13 +5,9 @@
   background-position: center;
   margin-right: auto;
   margin-left: auto;
-  min-height: 812px;
-  padding-left: 16px;
   height: 100%;
 }
-.container-hero {
-  padding-left: 16px;
-}
+
 .text {
   font-weight: 500;
   font-size: 50px;
@@ -22,6 +18,9 @@
 
 /* Мобільні стилі */
 @media (max-width: 767px) {
+  .container-hero {
+    padding-left: 0px;
+  }
   .hero {
     padding: 169px 0px 32px;
   }
@@ -36,8 +35,9 @@
     gap: 4px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
   }
-  
+
   .social-list-item {
     display: flex;
     align-items: center;
@@ -76,10 +76,8 @@
     padding-top: 212px;
     margin-top: auto;
   }
-  
-  .icon:hover,
   .contact:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fafafa;
   }
 }
 
@@ -90,18 +88,21 @@
 }
 
 /* Планшетні стилі */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+@media (min-width: 768px) {
   .hero {
-    background-color: url(../img/background-hero/mobile@1x.png);
+    background-color: url(../img/background-hero/tablet@1x.png);
     padding: 300px 0px 32px;
     min-height: 1024px;
   }
 
   .text {
+    align-content: center;
     font-size: 90px;
   }
 
   .social-list {
+    list-style: none;
     justify-content: flex-end;
     display: flex;
     padding-right: 32px;
@@ -118,21 +119,13 @@
     width: 55px;
     height: 55px;
   }
-
   .icon,
   .contact {
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
     border-radius: 50%;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    font-weight: bold;
     text-decoration: none;
   }
 
@@ -143,68 +136,67 @@
     width: 223px;
     height: 55px;
   }
-
-  .icon:hover,
   .contact:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fafafa;
   }
-
   .list {
     padding-top: 187px;
     align-items: flex-end;
   }
 }
-
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/tablet@2x.png);
+  }
+}
 /* Лаптопні стилі */
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
   .hero {
     background-image: url(../img/background-hero/laptop@1x.png);
-    padding: 300px 0;
+    padding: 300px 0px 32px;
   }
 
   .text {
+    padding-left: 178px;
     font-size: 90px;
     line-height: 100%;
   }
 
   .social-list {
+    justify-content: flex-end;
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: 15px;
+    padding-right: 32px;
+    gap: 8px;
   }
-
-  .icon,
-  .contact {
+  .icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    color: white;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
+    border-radius: 60px;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
   }
 
   .contact {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    font-size: 1rem;
+    display: flex;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
   }
-
-  .icon:hover,
   .contact:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fafafa;
   }
 
   .list {
+    padding-top: 243px;
     align-items: flex-end;
+  }
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/laptop@2x.png);
   }
 }

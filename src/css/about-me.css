@@ -178,6 +178,83 @@
   .ac .ac-panel .ac-text {
     padding: 8px 0 0;
   }
+  .about-intro__left {
+    height: 700px;
+    max-width: 100%;
+  }
+  .about-intro__img {
+    max-width: 100%;
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
+  .about-intro {
+    margin-bottom: 32px;
+  }
+  .about-intro__left {
+    height: 500px;
+    padding: 32px;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+  }
+  .about-intro__img {
+    height: 500px;
+  }
+  .ac-header {
+    height: 36px;
+  }
+  .ac .ac-trigger::before {
+    width: 36px;
+    height: 36px;
+  }
+  .ac .ac-trigger::after {
+    right: 14px;
+    top: 81%;
+  }
+  .about-accordion li:first-child .ac-text p {
+    padding-bottom: 32px;
+  }
+  .about-accordion li {
+    padding: 20px 0 32px 0;
+  }
+  .about-slider-container {
+    padding: 32px 0 0;
+  }
+  .swiper1 .swiper-slide {
+    width: 130px;
+    height: 130px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+  .swiper1 {
+    max-width: 260px;
+    height: 130px;
+  }
+  .about-slider-arrow {
+    top: 83px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .swiper1 .swiper-slide {
+    width: 110px;
+    height: 110px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+  .swiper1 {
+    max-width: 220px;
+    height: 110px;
+  }
+  .about-intro__left {
+    height: 440px;
+    padding: 26px;
+    font-size: 22px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+  }
+  .about-intro__img {
+    height: 440px;
+  }
 }
