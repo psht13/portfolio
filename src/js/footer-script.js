@@ -1,5 +1,7 @@
 import { doPostRequest } from './footer-api-request';
 import { notification } from './footer-notification';
+import { showModal } from './modal';
+
 // variables
 const form = document.querySelector('.footer-form');
 const commentInput = form.comment;
@@ -15,7 +17,7 @@ async function onFormSubmit() {
     const comment = commentInput.value;
 
     const data = (await doPostRequest(email, comment)).data;
-    notification('success', data.title, data.message);
+    showModal(data.title, data.message);
 
     localStorage.setItem('email', '');
     localStorage.setItem('comment', '');
