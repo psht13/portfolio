@@ -76,6 +76,7 @@
     padding-top: 212px;
     margin-top: auto;
   }
+  .icon:hover,
   .contact:hover {
     border: 1px solid #fafafa;
   }
@@ -136,6 +137,7 @@
     width: 223px;
     height: 55px;
   }
+  .icon:hover,
   .contact:hover {
     border: 1px solid #fafafa;
   }
@@ -186,6 +188,7 @@
     width: 223px;
     height: 55px;
   }
+  .icon:hover,
   .contact:hover {
     border: 1px solid #fafafa;
   }
