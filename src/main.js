@@ -1,4 +1,5 @@
 import Accordion from 'accordion-js';
+
 import Swiper from 'swiper/bundle';
 import './js/projects';
 import "./js/faq"
@@ -44,3 +45,4 @@ var swiper1 = new Swiper('.swiper1', {
     // prevEl: '.swiper-button-prev',
   },
 });
+
