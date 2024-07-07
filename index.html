@@ -18,7 +18,7 @@
   
   <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-8b9fa5ec.js">
-  <link rel="stylesheet" href="/portfolio/assets/index-85579441.css">
+  <link rel="stylesheet" href="/portfolio/assets/index-6a84f4e2.css">
 </head>
 
 <body>
@@ -286,7 +286,7 @@
   </div>
 
 </section>
-    <section class="section review" id="reviews">
+    <section class="section review">
   <div class="container">
     <h2 class="title-projects">projects</h2>
     <div class="projects-container">
@@ -303,62 +303,91 @@
             Programming Across Borders: Ideas, Technologies, Innovations
           </p>
 
-          <a class="project-button" href="https://github.com/psht13/portfolio">See project</a>
+          <a
+            class="project-button"
+            target="_blank"
+            href="https://github.com/psht13/portfolio"
+            >See project</a
+          >
         </li>
         <!------- Swiper------->
         <li class="projects-block-img">
-          <div class="swiper">
+          <div class="swiper swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="/portfolio/assets/expand-3da04fda.jpg 1x, /portfolio/assets/expand@2x-384b1ce4.jpg 2x" media="(min-width:1440px)" type="image/png" />
-                  <source srcset="/portfolio/assets/expand-3da04fda.jpg 1x, /portfolio/assets/expand@2x-384b1ce4.jpg 2x" media="(min-width:768px)" type="image/png" />
-                  <source srcset="/portfolio/assets/expand-a957310f.png 1x, /portfolio/assets/expand@2x-91c6a341.png 2x" media="(min-width:375px)" type="image/png" />
+                  <source
+                    srcset="/portfolio/assets/expand-3da04fda.jpg 1x, /portfolio/assets/expand@2x-384b1ce4.jpg 2x"
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="/portfolio/assets/expand-3da04fda.jpg 1x, /portfolio/assets/expand@2x-384b1ce4.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="/portfolio/assets/expand-a957310f.png 1x, /portfolio/assets/expand@2x-91c6a341.png 2x"
+                    media="(min-width:375px)"
+                  />
 
                   <img src="/portfolio/assets/expand-a957310f.png" alt="Projects" />
                 </picture>
               </div>
-              <!-- <div class="swiper-slide">
+              <div class="swiper-slide">
                 <picture>
                   <source
-                    srcset="
-                      ./img/projects/mobile/petl.png,
-                      ./img/projects/mobile/petl@2x.png 2x
-                    "
-                    type="image/png"
+                    srcset="/portfolio/assets/petl-b838ad30.jpg 1x, /portfolio/assets/petl@2x-98551fa6.jpg 2x"
+                    media="(min-width:1440px)"
                   />
-                  <img src="./img/projects/mobile/petl.png" alt="Projects" />
+                  <source
+                    srcset="/portfolio/assets/petl-b838ad30.jpg 1x, /portfolio/assets/petl@2x-98551fa6.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="/portfolio/assets/petl-6bbe7939.png 1x, /portfolio/assets/petl@2x-fded5c40.png 2x"
+                    media="(min-width:375px)"
+                  />
+
+                  <img src="/portfolio/assets/expand-a957310f.png" alt="Projects" />
                 </picture>
-              </div> -->
-              <!-- <div class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <picture>
                   <source
-                    srcset="
-                      ./img/projects/mobile/vocab.png,
-                      ./img/projects/mobile/vocab@2x.png 2x
-                    "
-                    type="image/png"
+                    srcset="/portfolio/assets/vocab-2bf9d3b2.jpg 1x, /portfolio/assets/vocab@2x-ca18e324.jpg 2x"
+                    media="(min-width:1440px)"
                   />
-                  <img src="./img/projects/mobile/vocab.png" alt="Projects" />
+                  <source
+                    srcset="/portfolio/assets/vocab-2bf9d3b2.jpg 1x, /portfolio/assets/vocab@2x-ca18e324.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="/portfolio/assets/vocab-134771c3.png 1x, /portfolio/assets/vocab@2x-b2fe0ae7.png 2x"
+                    media="(min-width:375px)"
+                  />
+
+                  <img src="/portfolio/assets/expand-a957310f.png" alt="Projects" />
                 </picture>
-              </div> -->
+              </div>
             </div>
           </div>
         </li>
       </ul>
     </div>
-
-
-    <!--! поки закоментував кнопки бо вони трохи заважають іншим і вилазять вгору -->
-
-    <!-- <div class="swiper-button">
-      <div class="swiper-button-prev">P</div>
-      <div class="swiper-button-next">N</div>
-    </div> -->
+    <div class="project-button-nav">
+      <div class="project-button-prev">
+        <svg class="link-slider" width="24" height="24">
+          <use href="/portfolio/assets/sprite-869de7d6.svg#icon-arrow-left2"></use>
+        </svg>
+      </div>
+      <div class="project-button-next">
+        <svg class="link-slider" width="24" height="24">
+          <use href="/portfolio/assets/sprite-869de7d6.svg#icon-arrow-right2"></use>
+        </svg>
+      </div>
+    </div>
   </div>
-
-
 </section>
+
     <section id="FAQ">
   <div class="container">
     <h2>FAQ</h2>
