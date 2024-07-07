@@ -5,6 +5,7 @@ import './js/projects';
 import './js/faq';
 import './js/header';
 import './js/footer-script';
+import './js/benefits';
 // Скрипт для предотвращения мерцания изображений
 document.querySelectorAll('.swiper-slide img').forEach(img => {
   img.onload = () => {
