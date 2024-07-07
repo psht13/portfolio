@@ -42,7 +42,7 @@
     margin: 0;
     flex-wrap: wrap;
   }
-/* додав врап бо на дуже малих девайсах вилазить почта */
+  /* додав врап бо на дуже малих девайсах вилазить почта */
 
   .social-list-item {
     display: flex;
@@ -164,7 +164,6 @@
   }
 
   .social-list {
-
     justify-content: flex-end;
     display: flex;
     padding-right: 32px;
