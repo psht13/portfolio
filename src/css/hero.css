@@ -88,6 +88,7 @@
 }
 
 /* Планшетні стилі */
+
 @media (min-width: 768px) {
   .hero {
     background-color: url(../img/background-hero/tablet@1x.png);
