@@ -1,19 +1,48 @@
-/* var swiper = new Swiper('.swiper', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      loop: true,
-      autoplay: {
-        delay: 3000, // Задержка для автоигры слайдов 3 секунды
-      },
-      speed: 500, // Скорость перехода между слайдами 0.5 секунды
-    });
+import Accordion from 'accordion-js';
+
+import Swiper from 'swiper/bundle';
+import './js/projects';
+import "./js/faq"
+
 
     // Скрипт для предотвращения мерцания изображений
     document.querySelectorAll('.swiper-slide img').forEach(img => {
       img.onload = () => {
         img.classList.add('loaded'); // Добавляем класс после полной загрузки
       };
-    }); */
-    import "./js/faq"
+    }); 
+    
+
+new Accordion('.accordion-container', {
+  openOnInit: [0],
+});
+
+var swiper1 = new Swiper('.swiper1', {
+  slidesPerView: 6,
+  spaceBetween: 0,
+  loop: true,
+  mousewheel: true,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    769: {
+      slidesPerView: 3,
+    },
+
+    // when window width is >= 640px
+    1440: {
+      slidesPerView: 6,
+    },
+  },
+  navigation: {
+    nextEl: '.js-about-slider-arrow',
+    // prevEl: '.swiper-button-prev',
+  },
+});
+
