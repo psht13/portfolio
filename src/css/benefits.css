@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    #benefits {
+    .benefits-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
