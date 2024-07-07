@@ -7,9 +7,6 @@
   margin-left: auto;
   height: 100%;
 }
-.container-hero {
-  padding-left: 16px;
-}
 .text {
   margin: 0;
   padding: 0;
@@ -26,11 +23,6 @@
   }
   .text {
     align-content: center;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 100%;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
   }
 
   .social-list {
@@ -39,11 +31,8 @@
     gap: 4px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
   }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
   .social-list-item {
     display: flex;
     justify-content: center;
@@ -81,11 +70,6 @@
     padding-top: 212px;
     margin-top: auto;
   }
-<<<<<<< Updated upstream
-  .icon:hover,
-=======
-
->>>>>>> Stashed changes
   .contact:hover {
     border: 1px solid #fafafa;
   }
@@ -128,29 +112,18 @@
     font-size: 16px;
     display: flex;
     justify-content: center;
-<<<<<<< Updated upstream
-    align-items: center;
-=======
     border-radius: 50%;
     text-decoration: none;
->>>>>>> Stashed changes
   }
 
   .contact {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 18px 24px;
-    width: 223px;
-    height: 55px;
     padding: 18px 24px;
     width: 223px;
     height: 55px;
   }
-<<<<<<< Updated upstream
-  .icon:hover,
-=======
-
->>>>>>> Stashed changes
   .contact:hover {
     border: 1px solid #fafafa;
   }
@@ -172,11 +145,6 @@
     line-height: 100%;
   }
   .social-list {
-<<<<<<< Updated upstream
-    gap: 15px;
-  }
-
-=======
     justify-content: flex-end;
     display: flex;
     padding-right: 32px;
@@ -187,14 +155,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 18px 16px;
     width: 55px;
     height: 55px;
   }
-
->>>>>>> Stashed changes
   .contact {
     display: flex;
     border: 1px solid rgba(250, 250, 250, 0.2);
