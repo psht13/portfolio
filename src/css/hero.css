@@ -47,6 +47,17 @@
     padding: 10px 8px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
+    transition: border-color 250ms ease-in-out;
+  }
+
+  .social-list-item:hover,
+  .social-list-item:focus {
+    border-color: #fafafa;
+
+  }
+
+  .contact:hover {
+    border-color: #fafafa;
   }
 
   .icon,
@@ -55,10 +66,7 @@
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    font-weight: bold;
-    color: #fafafa;
-    letter-spacing: -0.02em;
-    font-family: 'Inter Tight', sans-serif;
+    transition: border-color 250ms ease-in-out;
   }
 
   .contact {
@@ -75,9 +83,6 @@
     align-self: flex-end;
     padding-top: 212px;
     margin-top: auto;
-  }
-  .contact:hover {
-    border: 1px solid #fafafa;
   }
 }
 
@@ -127,6 +132,7 @@
     justify-content: center;
     border-radius: 50%;
     text-decoration: none;
+    transition: border-color 250ms ease-in-out;
   }
 
   .contact {
@@ -136,9 +142,7 @@
     width: 223px;
     height: 55px;
   }
-  .contact:hover {
-    border: 1px solid #fafafa;
-  }
+
   .list {
     padding-top: 187px;
     align-items: flex-end;
@@ -176,6 +180,7 @@
     padding: 18px 16px;
     width: 55px;
     height: 55px;
+    transition: border-color 250ms ease-in-out;
   }
 
   .contact {
@@ -185,10 +190,9 @@
     padding: 18px 24px;
     width: 223px;
     height: 55px;
+    transition: border-color 250ms ease-in-out;
   }
-  .contact:hover {
-    border: 1px solid #fafafa;
-  }
+  
 
   .list {
     padding-top: 243px;
