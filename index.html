@@ -18,7 +18,7 @@
   
   <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-8b9fa5ec.js">
-  <link rel="stylesheet" href="/portfolio/assets/index-9f51bb64.css">
+  <link rel="stylesheet" href="/portfolio/assets/index-5126a00e.css">
 </head>
 
 <body>
@@ -138,7 +138,26 @@
         unique personality.
       </div>
       <div class="about-intro__img">
-        <img src="../img/about.jpg" alt="moi" />
+        <!-- <img src="../img/about.jpg" alt="moi" /> -->
+        <picture>
+          <source
+            srcset="/portfolio/assets/about-8ee48945.jpg 1x, /portfolio/assets/about@2x-4a1a2815.jpg 2x"
+            media="(min-width:1440px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="/portfolio/assets/about-tab-8ed6cfce.jpg 1x, /portfolio/assets/about-tab-8ed6cfce.jpg 2x"
+            media="(min-width:768px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="/portfolio/assets/about-mob-3fdfa016.jpg 1x, /portfolio/assets/about-mob@2x-eab0e1da.jpg 2x"
+            media="(min-width:375px)"
+            type="image/jpg"
+          />
+
+          <img src="/portfolio/assets/about-8ee48945.jpg" alt="moi" />
+        </picture>
       </div>
     </div>
     <div class="about-info">
