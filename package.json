@@ -16,6 +16,7 @@
   "author": "Pavlo Yurchenko <pashtet.gm@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "modern-normalize": "^2.0.0",
     "swiper": "^11.1.4",
     "vite-plugin-full-reload": "^1.0.5",

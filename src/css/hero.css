@@ -1,20 +1,200 @@
-.container-hero {
-  max-width: 375px;
-  /* backdrop-filter: blur(100px);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(59, 59, 59, 0.2) 16.67%,
-    rgba(255, 255, 255, 0.2) 100%
-  ); */
+.hero {
   background-image: url(../img/background-hero/mobile@1x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
 }
-.social-list {
-  display: flex;
-  gap: 4;
-  font-family: 'Inter Tight', sans-serif;
+
+/* прибрав це правило бо у макеті нема відступу  */
+/* .container-hero {
+  padding-left: 16px;
+} */
+
+.text {
   font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  color: #fafafa;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* Мобільні стилі */
+@media (max-width: 767px) {
+  .container-hero {
+    padding-left: 0px;
+  }
+  .hero {
+    padding: 169px 0px 32px;
+  }
+
+  .text {
+    align-content: center;
+  }
+
+  .social-list {
+    display: flex;
+    list-style: none;
+    gap: 4px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+/* додав врап бо на дуже малих девайсах вилазить почта */
+
+  .social-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    padding: 10px 8px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+  }
+
+  .icon,
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fafafa;
+    letter-spacing: -0.02em;
+    font-family: 'Inter Tight', sans-serif;
+  }
+
+  .contact {
+    align-items: center;
+    width: 178px;
+    height: 37px;
+    padding: 10px 12px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    font-size: 0.8rem;
+  }
+
+  .list {
+    align-self: flex-end;
+    padding-top: 212px;
+    margin-top: auto;
+  }
+  .contact:hover {
+    border: 1px solid #fafafa;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/mobile@2x.png);
+  }
+}
+
+/* Планшетні стилі */
+@media (min-width: 768px) {
+  .hero {
+    background-color: url(../img/background-hero/mobile@1x.png);
+    padding: 300px 0px 32px;
+    min-height: 1024px;
+  }
+
+  .text {
+    align-content: center;
+    font-size: 90px;
+  }
+
+  .social-list {
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 32px;
+    gap: 8px;
+  }
+
+  .social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
+  }
+  .icon,
+  .contact {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+
+  .contact {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+  }
+  .contact:hover {
+    border: 1px solid #fafafa;
+  }
+  .list {
+    padding-top: 187px;
+    align-items: flex-end;
+  }
+}
+
+/* Лаптопні стилі */
+@media (min-width: 1440px) {
+  .hero {
+    background-image: url(../img/background-hero/laptop@1x.png);
+    padding: 300px 0px 32px;
+  }
+
+  .text {
+    padding-left: 178px;
+    font-size: 90px;
+    line-height: 100%;
+  }
+
+  .social-list {
+
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 32px;
+    gap: 8px;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .contact {
+    display: flex;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+  }
+  .contact:hover {
+    border: 1px solid #fafafa;
+  }
+
+  .list {
+    padding-top: 243px;
+    align-items: flex-end;
+  }
 }
