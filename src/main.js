@@ -1,4 +1,5 @@
 import Accordion from 'accordion-js';
+import './js/covers';
 
 import Swiper from 'swiper/bundle';
 import './js/projects';
