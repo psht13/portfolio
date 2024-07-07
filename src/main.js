@@ -43,3 +43,5 @@ var swiper1 = new Swiper('.swiper1', {
     // prevEl: '.swiper-button-prev',
   },
 });
+
+console.log(1 + 1);
