@@ -8,7 +8,26 @@
         unique personality.
       </div>
       <div class="about-intro__img">
-        <img src="../img/about.jpg" alt="moi" />
+        <!-- <img src="../img/about.jpg" alt="moi" /> -->
+        <picture>
+          <source
+            srcset="./img/about.jpg 1x, ./img/about@2x.jpg 2x"
+            media="(min-width:1440px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="./img/about-tab.jpg 1x, ./img/about-tab@2x.jpg 2x"
+            media="(min-width:768px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="./img/about-mob.jpg 1x, ./img/about-mob@2x.jpg 2x"
+            media="(min-width:375px)"
+            type="image/jpg"
+          />
+
+          <img src="./img/about.jpg" alt="moi" />
+        </picture>
       </div>
     </div>
     <div class="about-info">
