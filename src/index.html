@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,31 +19,29 @@
 </head>
 
 <body>
-
-  <div class="container">
-    <load src="./partials/header.html" />
-  </div>
-
-  <div class="container">
-    <main>
+  <main>
+    <section class="hero" style="position: relative">
+      <load src="./partials/header.html" />
       <load src="./partials/hero.html" />
-      <load src="./partials/about-me.html" />
-      <load src="./partials/benefits.html" />
-      <load src="./partials/projects.html" />
-      <load src="./partials/faq.html" />
-      <load src="./partials/covers.html" />
-      <load src="./partials/reviews.html" />
-    </main>
-  </div>
+    </section>
 
-  <div class="container">
-    <footer>
-      <load src="./partials/work-together.html" />
-    </footer>
-  </div>
+    <load src="./partials/about-me.html" />
+    <load src="./partials/benefits.html" />
+    <load src="./partials/projects.html" />
+    <load src="./partials/faq.html" />
+    <load src="./partials/covers.html" />
+    <load src="./partials/reviews.html" />
+  </main>
+
+  <footer class="footer" id="footer">
+    <load src="./partials/work-together.html" />
+  </footer>
 
   <load src="./partials/modal.html" />
 
+  <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./main.js"></script>
 </body>
+
 </html>
