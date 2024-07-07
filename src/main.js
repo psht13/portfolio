@@ -9,7 +9,7 @@ import "./js/faq"
       img.onload = () => {
         img.classList.add('loaded'); // Добавляем класс после полной загрузки
       };
-    }); */
+    }); 
     
 
 new Accordion('.accordion-container', {
