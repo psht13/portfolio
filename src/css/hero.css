@@ -8,11 +8,6 @@
   height: 100%;
 }
 
-/* прибрав це правило бо у макеті нема відступу  */
-/* .container-hero {
-  padding-left: 16px;
-} */
-
 .text {
   font-weight: 500;
   font-size: 50px;
@@ -42,7 +37,6 @@
     margin: 0;
     flex-wrap: wrap;
   }
-/* додав врап бо на дуже малих девайсах вилазить почта */
 
   .social-list-item {
     display: flex;
@@ -94,9 +88,10 @@
 }
 
 /* Планшетні стилі */
+
 @media (min-width: 768px) {
   .hero {
-    background-color: url(../img/background-hero/mobile@1x.png);
+    background-color: url(../img/background-hero/tablet@1x.png);
     padding: 300px 0px 32px;
     min-height: 1024px;
   }
@@ -149,7 +144,11 @@
     align-items: flex-end;
   }
 }
-
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/tablet@2x.png);
+  }
+}
 /* Лаптопні стилі */
 @media (min-width: 1440px) {
   .hero {
@@ -164,7 +163,6 @@
   }
 
   .social-list {
-
     justify-content: flex-end;
     display: flex;
     padding-right: 32px;
@@ -174,7 +172,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 18px 16px;
     width: 55px;
@@ -196,5 +193,10 @@
   .list {
     padding-top: 243px;
     align-items: flex-end;
+  }
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/laptop@2x.png);
   }
 }
