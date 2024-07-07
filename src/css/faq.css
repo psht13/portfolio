@@ -3,7 +3,7 @@ body {
   font-family: 'Inter Tight', sans-serif;
 }
 
-h2 {
+.h2 {
   margin-bottom: 32px;
   color: rgba(250, 250, 250, 0.4);
   text-align: left;
@@ -172,8 +172,8 @@ transition: max-height 500ms ease;
 
   .faq-list-item-second {
     padding-top: 32px;
-    padding-left: 31px;
     padding-bottom: 26px;
+    padding-left: 31px;
   } 
 
   .faq-list-item-first {
