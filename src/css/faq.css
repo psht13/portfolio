@@ -172,12 +172,16 @@ transition: max-height 500ms ease;
 
   .faq-list-item-second {
     padding-top: 32px;
-    padding-left: 32px;
+    padding-left: 31px;
     padding-bottom: 26px;
   } 
 
   .faq-list-item-first {
     border-right: 1px solid #fafafa20;
+  } 
+
+  .faq-list-item-second {
+    border-left: 1px solid #fafafa20;
   } 
 
    .btn-pad {
