@@ -1,0 +1,107 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.content {
+  position: relative;
+  height: 508px;
+  overflow: hidden;
+}
+
+.covers {
+  background-image: url(../img/covers/background-covers.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+
+.covers_inner {
+  display: flex;
+  position: relative;
+  padding: 0;
+  margin: 0; 
+  transform: rotate(16deg); 
+}
+
+.covers_inner::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: rotate(16deg);
+}
+.covers_inner:not(:last-child) {
+  margin-bottom: 15px;
+}
+.covers_line {
+  animation: marqueeLine 19s linear infinite;
+  flex-shrink: 0;
+  margin-right: 15px;
+  height: 167px;
+  width: calc(100% / 1.2);
+  white-space: nowrap;
+}
+
+.covers_inner:nth-child(2n) .covers_line {
+  animation-direction: reverse;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translate(-20%) ;
+  }
+  
+  to {
+    transform: translate(-180%) ;
+  }
+}
+
+@media only screen and (min-width: 767px){
+  .content {
+    height: 960px;
+  }
+  .covers_line {
+    width: calc(100% / 1.5);
+    height: 277px;
+    margin-right: 35px;
+  }
+  .covers_inner:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .covers {
+    top: -150px;
+  }
+  .content {
+    height: 960px;
+  }
+  .covers_line {
+    width: calc(100% / 2.3);
+    height: 364px;
+    margin-right: 35px;
+  }
+  .covers_inner:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.covers.animate .covers_inner {
+  animation-play-state: running;
+}
+
+.covers_inner {
+  animation-play-state: paused;
+}
