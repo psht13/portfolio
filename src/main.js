@@ -9,7 +9,6 @@ import './js/header';
 import './js/footer-script';
 import './js/benefits';
 
-
 // Скрипт для предотвращения мерцания изображений
 document.querySelectorAll('.swiper-slide img').forEach(img => {
   img.onload = () => {
@@ -24,6 +23,7 @@ new Accordion('.accordion-container', {
 var swiper1 = new Swiper('.swiper1', {
   slidesPerView: 6,
   spaceBetween: 0,
+  direction: 'horizontal',
   loop: true,
   mousewheel: true,
   keyboard: {
