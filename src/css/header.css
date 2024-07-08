@@ -57,19 +57,22 @@
             background-repeat: no-repeat;
             opacity: 0;
             visibility: hidden;
+            overflow: hidden;
            
            
         }
                  .mobile-menu.open {
                      opacity: 1;
                      visibility: visible;
+                     overflow: hidden;
                      transition: opacity 250ms ease-in-out;
                  }
         
                  .mobile-menu-container {
                      position: relative;
                      height: 100%;
-                     width: 100%; 
+                     width: 100%;
+                     
                  }
                  
         .mobile-menu-close-btn {
@@ -102,10 +105,6 @@
                  }
                  .mobile-menu-elem:nth-child(4){
                     padding-bottom: 0;
-                 }
-                 .menu-elem:hover,
-                 .menu-elem:focus{
-                   color: #ED3B44;
                  }
                  .mobile-order-link{
                     margin: 0 auto;
