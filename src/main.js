@@ -1,5 +1,6 @@
 import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
+import './js/projects';
 
 new Accordion('.accordion-container', {
   openOnInit: [0],
