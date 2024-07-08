@@ -18,9 +18,11 @@ color: var(--main-text);
 /*================================================================*/
 
 body {
+  overflow-x: hidden;
   color: var(--main-text);
   background-color: var(--background);
   font-family: 'Inter Tight', sans-serif;
+  
 }
 
 /* General mobile styles */
