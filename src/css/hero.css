@@ -22,7 +22,7 @@
     padding-left: 0px;
   }
   .hero {
-    padding: 169px 0px 32px;
+    padding: 280px 0px 32px;
   }
 
   .text {
@@ -95,7 +95,6 @@
 
 @media (min-width: 768px) {
   .hero {
-    min-height: 1024px;
     padding: 300px 0px 32px;
     background-color: url(../img/background-hero/tablet@1x.png);
   }

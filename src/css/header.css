@@ -4,7 +4,6 @@
   top: 0;
   left: 50%;
   width: 100%;
-  padding: 15px 0;
   color: #fff;
   background-color: transparent;
   transform: translateX(-50%);
@@ -15,10 +14,8 @@
 }
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-
+  padding-top: 32px;
 }
 
 .logo-container {
@@ -30,97 +27,92 @@
   border-radius: 18px;
 }
 .hidden {
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
 }
-.name-text{
-    font-weight: 500;
-    font-size: 20px;
+.name-text {
+  letter-spacing: -0.02em;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop-nav,
+  .order-project-link {
+    display: none;
+  }
+  .mobile-menu {
+    position: fixed;
+    z-index: 99999999999;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url(../img/header-img/background-mobile-menu/Glasseffect.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .mobile-menu.open {
+    visibility: visible;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+  }
+
+  .mobile-menu-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    line-height: 0;
+    padding: 0;
+    border-style: none;
+    background-color: transparent;
+  }
+  .mobile-nav-menu {
+    justify-content: center;
+    padding-top: 302px;
+    padding-bottom: 289px;
+    text-align: center;
     letter-spacing: -0.02em;
-  
-}
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .mobile-menu-elem {
+    padding-bottom: 12px;
+  }
+  .mobile-menu-elem:nth-child(4) {
+    padding-bottom: 0;
+  }
+  .mobile-order-link {
+    display: block;
+    width: 163px;
+    height: 55px;
+    padding: 18px 24px;
+    margin: 0 auto;
+    border-radius: 60px;
+    background-color: #ed3b44;
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-size: 16px;
 
-@media only screen and (max-width: 767px){
-    .desktop-nav , .order-project-link{
-        display: none;
-    }
-        .mobile-menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 99999999999;
-            width: 100%;
-            height: 100%;
-            background-image: url(../img/header-img/background-mobile-menu/Glasseffect.jpg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            opacity: 0;
-            visibility: hidden;
-            overflow: hidden;
-           
-           
-        }
-                 .mobile-menu.open {
-                     opacity: 1;
-                     visibility: visible;
-                     overflow: hidden;
-                     transition: opacity 250ms ease-in-out;
-                 }
-        
-                 .mobile-menu-container {
-                     position: relative;
-                     height: 100%;
-                     width: 100%;
-                     
-                 }
-                 
-        .mobile-menu-close-btn {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
-            top: 24px;
-            right: 16px;
-            border-style: none;
-            background-color: transparent;
-            padding: 0;
-            line-height: 0;
-          
-        }
-       .mobile-nav-menu {
-                        text-align: center;
-                        padding-top: 302px;
-                        padding-bottom: 289px;
-                        justify-content: center;
-                        font-weight: 500;
-                        font-size: 16px;
-                        letter-spacing: -0.02em;
-                        text-decoration: underline;
-                 }
-                 .mobile-menu-elem{
-                    padding-bottom: 12px;
-                 }
-                 .mobile-menu-elem:nth-child(4){
-                    padding-bottom: 0;
-                 }
-                 .mobile-order-link{
-                    margin: 0 auto;
-                    display: block;
-                    text-align: center;
-                        border-radius: 60px;
-                        padding: 18px 24px;
-                        width: 163px;
-                        height: 55px;
-                        background-color: #ED3B44;
-                    
-                        font-weight: 500;
-                        font-size: 16px;
-                        letter-spacing: -0.02em;
-                 }
-
+    font-weight: 500;
+  }
 }
 @media screen and (min-resolution: 192dpi) {
   .mobile-menu {
@@ -135,9 +127,8 @@
     display: none;
   }
   .nav-menu {
-    text-decoration: underline;
     text-align: center;
-    
+    text-decoration: underline;
   }
   .order-project-link {
     width: 163px;
@@ -145,14 +136,16 @@
     padding: 18px 24px;
     border-radius: 60px;
     background-color: #ed3b44;
+    transition: background-color 250ms ease-in-out;
     text-align: center;
     letter-spacing: -0.02em;
     font-size: 16px;
-
     font-weight: 500;
   }
-  .desktop-nav{
-    text-align: center;
+
+  .order-project-link:hover,
+  .order-project-link:focus {
+    background-color: var(--hover);
   }
   .desktop-nav-container {
     text-align: center;
@@ -160,25 +153,21 @@
   .menu-list {
     position: relative;
     margin-top: 8px;
-  
+
     transition: opacity 250ms ease-in-out;
-   
   }
-  .menu-list-elem{
+  .menu-list-elem {
     padding-bottom: 5px;
   }
   .menu-list-elem:hover,
-  .menu-list-elem:focus{
-    color: #ED3B44;
+  .menu-list-elem:focus {
+    color: #ed3b44;
   }
-    
+
   .header-container {
     align-items: flex-start;
-    padding: 0 32px;
-    margin-top: 33px;
   }
   .desktop-nav-container {
     padding-top: 10px;
   }
-  
 }
