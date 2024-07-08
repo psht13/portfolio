@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const mobileNavMenu = document.querySelector('.mobile-menu');
   const burgerMenu = document.querySelector('.mobile-nav-toggle');
   const closeIcon = document.querySelector('.mobile-menu-close-btn');
   const navMenu = document.querySelector('.nav-menu');
+  const mobileNavMenu = document.querySelector('.mobile-menu');
   const navList = document.querySelector('.menu-list');
-  const mobileElem = document.querySelector('.mobile-menu-elem');
   const mobileListMenu = document.querySelector('.mobile-nav-menu');
+  const mobileContainer = document.querySelector('.mobile-menu-container');
 
   burgerMenu.addEventListener('click', e => {
     mobileNavMenu.classList.toggle('open');
@@ -23,7 +23,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   navList.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const sectionId = link.getAttribute('href').substring(1);
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
       navList.classList.add('hidden');
     });
   });
@@ -36,9 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  mobileListMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+  mobileContainer.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
       mobileNavMenu.classList.remove('open');
+      const sectionId = link.getAttribute('href').substring(1);
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
     });
   });
 
