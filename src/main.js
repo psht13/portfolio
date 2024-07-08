@@ -1,7 +1,21 @@
 import Accordion from 'accordion-js';
-
 import Swiper from 'swiper/bundle';
+import './js/covers';
+import './js/modal';
+import './js/modal-handlers';
 import './js/projects';
+import './js/faq';
+import './js/header';
+import './js/footer-script';
+import './js/benefits';
+
+
+// Скрипт для предотвращения мерцания изображений
+document.querySelectorAll('.swiper-slide img').forEach(img => {
+  img.onload = () => {
+    img.classList.add('loaded'); // Добавляем класс после полной загрузки
+  };
+});
 
 new Accordion('.accordion-container', {
   openOnInit: [0],
@@ -35,4 +49,3 @@ var swiper1 = new Swiper('.swiper1', {
     // prevEl: '.swiper-button-prev',
   },
 });
-
