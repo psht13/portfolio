@@ -6,21 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const navList = document.querySelector('.menu-list');
   const mobileListMenu = document.querySelector('.mobile-nav-menu');
   const mobileContainer = document.querySelector('.mobile-menu-container');
-  const orderLink = document.querySelector('.order-project-link');
 
   burgerMenu.addEventListener('click', e => {
     mobileNavMenu.classList.toggle('open');
-  });
-
-  orderLink.addEventListener('click', e => {
-    e.preventDefault();
-    const section = document.getElementById('footer');
-    if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
   });
 
   navMenu.addEventListener('click', e => {
