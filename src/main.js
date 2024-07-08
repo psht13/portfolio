@@ -8,9 +8,11 @@ import './js/faq';
 import './js/header';
 import './js/footer-script';
 import './js/benefits';
+
 import './js/reviews-api-request';
 import './js/reviews-script';
 import './js/mobile-menu';
+
 
 // Скрипт для предотвращения мерцания изображений
 document.querySelectorAll('.swiper-slide img').forEach(img => {
@@ -26,6 +28,7 @@ new Accordion('.accordion-container', {
 var swiper1 = new Swiper('.swiper1', {
   slidesPerView: 6,
   spaceBetween: 0,
+  direction: 'horizontal',
   loop: true,
   mousewheel: true,
   keyboard: {
