@@ -147,6 +147,7 @@
 .about-slider-container {
   position: relative;
   padding: 96px 32px 0;
+  overflow-x: hidden;
 }
 .about-slider-arrow {
   position: absolute;
