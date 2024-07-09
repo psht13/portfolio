@@ -178,8 +178,8 @@
 /*================================================================*/
 @media screen and (min-width: 768px) {
   .footer-wrapper {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 
   .footer-heading-wrapper {
@@ -241,7 +241,7 @@
 /*================================================================*/
 @media screen and (min-width: 1440px) {
   .footer-wrapper {
-    padding-top: 80px;
+    padding-top: 82px;
     padding-right: 196px;
     padding-bottom: 164px;
     padding-left: 196px;

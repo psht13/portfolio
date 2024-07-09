@@ -163,7 +163,7 @@
 }
 @media screen and (max-width: 1439px) {
   #about-me {
-    padding-top: 96px;
+    padding-top: 64px;
   }
   .about-intro {
     flex-direction: column;
