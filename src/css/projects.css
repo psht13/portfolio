@@ -216,7 +216,7 @@
 
   .projects-description,
   .projects-block-img {
-    max-width: 688px;
+    width: 688px;
     height: 625px;
   }
 
