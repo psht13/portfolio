@@ -162,14 +162,36 @@
 /* bg */
 .footer {
   background: no-repeat;
-  background-image: url(../img/work-together-img/footer-bg.png);
+  background-image: url(../img/work-together-img/elements.png);
   background-position-x: right;
-  background-size: 45% 100%;
+  background-size: contain;
 }
 
 @media screen and (min-resolution: 192dpi) {
   .footer {
-    background-image: url(../img/work-together-img/footer-bg@2x.png);
+    background-image: url(../img/work-together-img/elements@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url(../img/work-together-img/bg-tablet.png);
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .footer {
+      background-image: url(../img/work-together-img/bg-tablet@2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    background-image: url(../img/work-together-img/footer-bg.png);
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .footer {
+      background-image: url(../img/work-together-img/footer-bg@2x.png);
+    }
   }
 }
 
