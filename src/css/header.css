@@ -108,8 +108,11 @@
     text-align: center;
     letter-spacing: -0.02em;
     font-size: 16px;
-
+    transition: background-color 250ms ease-in-out;
     font-weight: 500;
+  }
+  .mobile-order-link:hover, .mobile-order-link:focus {
+    background-color: var(--hover);
   }
 }
 @media screen and (min-resolution: 192dpi) {
