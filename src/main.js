@@ -8,6 +8,8 @@ import './js/faq';
 import './js/header';
 import './js/footer-script';
 import './js/benefits';
+import './js/reviews-api-request';
+import './js/reviews-script';
 
 // Скрипт для предотвращения мерцания изображений
 document.querySelectorAll('.swiper-slide img').forEach(img => {
