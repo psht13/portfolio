@@ -49,15 +49,15 @@ section {
     max-width: 768px;
     padding: 0 32px;
   }
+
+  .section {
+    padding: 48px 0;
+  }
 }
 
 /* General desktop styles */
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-  }
-
-  .section {
-    padding: 48px 0;
   }
 }

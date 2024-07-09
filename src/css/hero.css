@@ -165,7 +165,7 @@
 /* Лаптопні стилі */
 @media (min-width: 1440px) {
   .hero {
-    padding: 300px 0px 32px;
+    padding: 300px 0 32px 0;
     background-image: url(../img/background-hero/laptop@1x.png);
   }
 
