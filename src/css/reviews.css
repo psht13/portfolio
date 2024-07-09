@@ -292,6 +292,7 @@ body {
   justify-content: center;
   gap: 12px;
 }
+
 /* 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -307,4 +308,21 @@ body {
   border-radius: 60px;
   cursor: pointer;
   justify-content: center;
+}
+.reviews-button-prev:hover,
+.reviews-button-next:hover,
+.reviews-button-prev:focus,
+.reviews-button-next:focus{
+  border: 1px solid rgba(250, 250, 250, 250);
+  fill: #fafafa
+
+}
+
+.svg-arrow{
+  fill:#3B3B3B
+}
+
+.svg-arrow:hover,
+.svg-arrow:focus{
+    fill:#fafafa
 }
