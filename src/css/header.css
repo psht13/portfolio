@@ -54,6 +54,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    overflow-y: auto;
   }
   .mobile-menu.open {
     visibility: visible;
@@ -102,7 +103,7 @@
     width: 163px;
     height: 55px;
     padding: 18px 24px;
-    margin: 0 auto;
+    margin: 0 auto 64px auto;
     border-radius: 60px;
     background-color: #ed3b44;
     text-align: center;

@@ -49,6 +49,10 @@ section {
     max-width: 768px;
     padding: 0 32px;
   }
+
+  section {
+    padding: 48px 0;
+  }
 }
 
 /* General desktop styles */
@@ -56,8 +60,7 @@ section {
   .container {
     max-width: 1440px;
   }
-
-  .section {
-    padding: 48px 0;
+  section {
+    padding: 82px;
   }
 }
