@@ -12,8 +12,5 @@ export function showModal(a, b) {
 }
 
 export function hideModal() {
-  title.textContent = '';
-  message.textContent = '';
-
   backdrop.classList.remove('modal-visible');
 }

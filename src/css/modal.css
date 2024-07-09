@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  padding: 0 16px;
   z-index: 99999;
   top: 0;
   left: 0;
@@ -20,13 +21,13 @@
 }
 
 .modal {
+  height: 276px;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   max-width: 492px;
-  height: 246px;
   padding: 0 32px;
   border: 1px solid rgba(250, 250, 250, 20%);
   border-radius: 20px;
@@ -67,8 +68,7 @@
 }
 
 .modal-title {
-  width: 364px;
-  height: 30px;
+  max-width: 364px;
   line-height: 30px;
   opacity: 0px;
   color: var(--main-text);
@@ -82,7 +82,7 @@
 }
 
 .modal-text {
-  width: 364px;
+  max-width: 364px;
   height: 72px;
   line-height: 24px;
   opacity: 0px;
