@@ -1,19 +1,19 @@
 .hero {
-  height: 100%;
-  margin-right: auto;
-  margin-left: auto;
   background-image: url(../img/background-hero/mobile@1x.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
 }
 
 .text {
-  line-height: 100%;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
-  font-size: 50px;
   font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 /* Мобільні стилі */
@@ -31,11 +31,11 @@
 
   .social-list {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
     list-style: none;
     gap: 4px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
   }
 
   .social-list-item {
@@ -47,16 +47,6 @@
     padding: 10px 8px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    transition: border-color 250ms ease-in-out;
-  }
-
-  .social-list-item:hover,
-  .social-list-item:focus {
-    border-color: #fafafa;
-  }
-
-  .contact:hover {
-    border-color: #fafafa;
   }
 
   .icon,
@@ -64,8 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: border-color 250ms ease-in-out;
     font-size: 14px;
+    transition: border 250ms ease-in-out;
   }
 
   .contact {
@@ -83,11 +73,9 @@
     padding-top: 212px;
     margin-top: auto;
   }
-}
-
-@media screen and (min-resolution: 192dpi) {
-  .hero {
-    background-image: url(../img/background-hero/mobile@2x.png);
+  .icon:hover,
+  .contact:hover {
+    border: 1px solid #fafafa;
   }
 }
 
@@ -95,9 +83,9 @@
 
 @media (min-width: 768px) {
   .hero {
-    min-height: 1024px;
-    padding: 300px 0px 32px;
     background-color: url(../img/background-hero/tablet@1x.png);
+    padding: 300px 0px 32px;
+    min-height: 1024px;
   }
 
   .text {
@@ -106,79 +94,67 @@
   }
 
   .social-list {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 32px;
     list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 32px;
     gap: 8px;
   }
 
   .social-list-item {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
-    padding: 18px 16px;
+    align-items: center;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    transition: border-color 250ms ease-in-out;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
   }
-
-  .social-list-item:hover,
-  .social-list-item:focus {
-    border-color: #fafafa;
-  }
-
-  .contact:hover {
-    border-color: #fafafa;
-  }
-
   .icon,
   .contact {
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: border-color 250ms ease-in-out;
-    font-size: 16px;
     text-decoration: none;
+    transition: border 250ms ease-in-out;
   }
 
   .contact {
-    width: 223px;
-    height: 55px;
-    padding: 18px 24px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
   }
-
+  .icon:hover,
+  .contact:hover {
+    border: 1px solid #fafafa;
+  }
   .list {
-    align-items: flex-end;
     padding-top: 187px;
+    align-items: flex-end;
   }
 }
-@media screen and (min-resolution: 192dpi) {
-  .hero {
-    background-image: url(../img/background-hero/tablet@2x.png);
-  }
-}
+
 /* Лаптопні стилі */
 @media (min-width: 1440px) {
   .hero {
-    padding: 300px 0px 32px;
     background-image: url(../img/background-hero/laptop@1x.png);
+    padding: 300px 0px 32px;
   }
 
   .text {
-    line-height: 100%;
     padding-left: 178px;
     font-size: 90px;
+    line-height: 100%;
   }
 
   .social-list {
-    display: flex;
     justify-content: flex-end;
+    display: flex;
     padding-right: 32px;
     gap: 8px;
   }
@@ -186,30 +162,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 60px;
+    padding: 18px 16px;
     width: 55px;
     height: 55px;
-    padding: 18px 16px;
-    border-radius: 60px;
-    transition: border-color 250ms ease-in-out;
+    transition: border 250ms ease-in-out;
   }
 
   .contact {
     display: flex;
-    width: 223px;
-    height: 55px;
-    padding: 18px 24px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    transition: border-color 250ms ease-in-out;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+    transition: border 250ms ease-in-out;
+  }
+  .icon:hover,
+  .contact:hover {
+    border: 1px solid #fafafa;
   }
 
   .list {
-    align-items: flex-end;
     padding-top: 243px;
+    align-items: flex-end;
   }
 }
 @media screen and (min-resolution: 192dpi) {
   .hero {
     background-image: url(../img/background-hero/laptop@2x.png);
+  }
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/tablet@2x.png);
+  }
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/background-hero/mobile@2x.png);
   }
 }
