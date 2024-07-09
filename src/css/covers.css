@@ -57,6 +57,10 @@
   animation-direction: reverse;
 }
 
+.covers_inner:last-child {
+  margin-top: 30px;
+}
+
 @keyframes marqueeLine {
   from {
     transform: translate(-20%) ;
@@ -79,6 +83,9 @@
   .covers_inner:not(:last-child) {
     margin-bottom: 20px;
   }
+  .covers_inner:last-child {
+    margin-top: 42px;
+  }
 }
 
 @media only screen and (min-width: 1440px){
@@ -96,6 +103,7 @@
   .covers_inner:not(:last-child) {
     margin-bottom: 20px;
   }
+
 }
 
 .covers.animate .covers_inner {
