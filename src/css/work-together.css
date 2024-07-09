@@ -277,3 +277,16 @@
     width: 390px;
   }
 }
+
+[data-aos='new-animation'] {
+  opacity: 0;
+  transform: scale(0.5) rotateZ(0deg);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+[data-aos='new-animation'].aos-animate {
+  opacity: 1;
+  transform: scale(1) rotateZ(360deg);
+}
