@@ -22,7 +22,6 @@ body {
   color: var(--main-text);
   background-color: var(--background);
   font-family: 'Inter Tight', sans-serif;
-  
 }
 
 /* General mobile styles */
@@ -39,6 +38,7 @@ body {
 }
 
 section {
+  overflow-x: hidden;
   padding: 32px 0;
 }
 

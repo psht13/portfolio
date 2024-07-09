@@ -186,8 +186,14 @@
   .about-intro__img {
     max-width: 100%;
   }
+  .about-intro {
+    margin-bottom: 32px;
+  }
 }
 @media screen and (max-width: 767px) {
+  .about-intro {
+    margin-bottom: 12px;
+  }
   .about-intro {
     margin-bottom: 32px;
   }
