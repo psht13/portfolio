@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const navList = document.querySelector('.menu-list');
   const mobileListMenu = document.querySelector('.mobile-nav-menu');
   const mobileContainer = document.querySelector('.mobile-menu-container');
+  const orderLink = document.querySelector('.order-project-link');
+
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
 
   burgerMenu.addEventListener('click', e => {
     mobileNavMenu.classList.toggle('open');
@@ -26,13 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', e => {
       e.preventDefault();
       const sectionId = link.getAttribute('href').substring(1);
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      }
+      scrollToSection(sectionId);
       navList.classList.add('hidden');
     });
   });
@@ -44,19 +49,19 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
   });
+  orderLink.addEventListener('click', e => {
+    e.preventDefault();
+    const sectionId = orderLink.getAttribute('href').substring(1);
+    scrollToSection(sectionId);
+    mobileNavMenu.classList.remove('open');
+  });
 
   mobileContainer.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
       mobileNavMenu.classList.remove('open');
       const sectionId = link.getAttribute('href').substring(1);
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      }
+      scrollToSection(sectionId);
     });
   });
 
