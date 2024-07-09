@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/portfolio/assets/favicon-30b3351a.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1/dist/css/iziToast.min.css">
-  
-  <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-bb2cb194.js">
-  <link rel="stylesheet" href="/portfolio/assets/index-e657a4b2.css">
-</head>
-
-<body style="position: relative;">
-  <main>
-    <section class="hero" style="position: relative">
-      <div class="header container">
-  <div class="header-container">
-
-
-     <div class="logo-container">
-      <img class="logo-img"
-  srcset="/portfolio/assets/image-dd9ec1c0.jpg , /portfolio/assets/image@2x-340ba3bc.jpg 2x"
-  src="./img/photo.jpg"
-  alt="Logo"
-/>
-        <p class="icon-text">jefferson*</p>
-  </div>
-  <nav class="desktop-nav">
-    <div class="desktop-nav-container">
-      <a class="nav-menu" href="">Menu</a>
-    <ul class="menu-list hidden">
-      <li class="menu-list-elem"><a class="menu-elem" href="#about-me">About me</a></li>
-      <li class="menu-list-elem"><a class="menu-elem" href="#benefits">Benefits</a></li>
-      <li class="menu-list-elem"><a class="menu-elem" href="#projects">Projects</a></li>
-      <li class="menu-list-elem"><a class="menu-elem" href="#FAQ">FAQ</a>
-      </li>
-    </ul>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/assets/favicon-30b3351a.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-  </nav>
+    <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-bb2cb194.js">
+    <link rel="stylesheet" href="/portfolio/assets/index-f08623b4.css">
+  </head>
 
+  <body>
+    <main>
+      <section class="hero" style="position: relative">
+        <div class="header container">
+  <div class="header-container">
+    <div class="logo-container">
+      <img
+        class="logo-img"
+        srcset="/portfolio/assets/image-dd9ec1c0.jpg , /portfolio/assets/image@2x-340ba3bc.jpg 2x"
+        src="./img/photo.jpg"
+        alt="Logo"
+      />
+      <p class="icon-text">jefferson*</p>
+    </div>
+    <nav class="desktop-nav">
+      <div class="desktop-nav-container">
+        <a class="nav-menu" href="">Menu</a>
+        <ul class="menu-list hidden">
+          <li class="menu-list-elem">
+            <a class="menu-elem" href="#about-me">About me</a>
+          </li>
+          <li class="menu-list-elem">
+            <a class="menu-elem" href="#benefits">Benefits</a>
+          </li>
+          <li class="menu-list-elem">
+            <a class="menu-elem" href="#projects">Projects</a>
+          </li>
+          <li class="menu-list-elem">
+            <a class="menu-elem" href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="mobile-nav-toggle">
       <button id="menu-open-btn" class="header-menu-button" type="button">
         <svg class="burger-icon" width="28" height="28">
           <use href="/portfolio/assets/icons-cc81a67f.svg#icon-menu"></use>
-
         </svg>
       </button>
-
     </div>
 
     <a href="#footer" class="order-project-link">Order the project</a>
   </div>
-
 </div>
-      <!-- зв'яжіться з відповідальним за header, у вас накладки у розмітці -->
+
+        <!-- зв'яжіться з відповідальним за header, у вас накладки у розмітці -->
 
 <div class="container">
   <div class="container-hero">
@@ -99,9 +111,34 @@
     </div>
   </div>
 </div>
-    </section>
+        <!-- Mobile Menu -->
+<div class="mobile-menu container">
+  <div class="mobile-menu-container">
+    <button class="mobile-menu-close-btn">
+      <svg class="icon-close" width="28" height="28">
+        <use href="/portfolio/assets/icons-cc81a67f.svg#icon-x"></use>
+      </svg>
+    </button>
+    <ul class="mobile-nav-menu">
+      <li class="mobile-menu-elem">
+        <a class="menu-elem" href="#about-me">About me</a>
+      </li>
+      <li class="mobile-menu-elem">
+        <a class="menu-elem" href="#benefits">Benefits</a>
+      </li>
+      <li class="mobile-menu-elem">
+        <a class="menu-elem" href="#projects">Projects</a>
+      </li>
+      <li class="mobile-menu-elem"><a class="menu-elem" href="#FAQ">FAQ</a></li>
+    </ul>
 
-    <section id="about-me">
+    <a href="#footer" class="mobile-order-link">Order the project</a>
+  </div>
+</div>
+
+      </section>
+
+      <section id="about-me">
   <div class="container">
     <div class="about-intro">
       <div class="about-intro__left">
@@ -226,7 +263,7 @@
   </div>
 </section>
 
-    <section id="benefits">
+      <section id="benefits">
   <div class="container benefits-container">
     <h2 class="benefits-title">Benefits of working with me</h2>
     <div class="benefits-content-container">
@@ -295,7 +332,7 @@
   </div>
 </section>
 
-    <section class="section review" id="projects">
+      <section class="section review" id="projects">
   <div class="container">
     <h2 class="title-projects">projects</h2>
     <div class="projects-container">
@@ -397,7 +434,7 @@
   </div>
 </section>
 
-    <section id="FAQ">
+      <section id="FAQ">
   <div class="container">
     <h2 class="h2">FAQ</h2>
     <div class="faq-wrapper">
@@ -512,7 +549,7 @@
     </div>
   </div>
 </section>
-    <section id="covers">
+      <section id="covers">
   <div class="container">
     <div class="content">
       <div class="covers">
@@ -565,11 +602,11 @@
     </div>
   </div>
 </section>
-    <section></section>
-  </main>
+      <section></section>
+    </main>
 
-  <footer class="footer" id="footer">
-    <div class="container footer-wrapper">
+    <footer class="footer" id="footer">
+      <div class="container footer-wrapper">
     <div class="footer-heading-wrapper">
         <h2 class="footer-heading-pb footer-heading">
             <picture class=" footer-heading-img-wrapper">
@@ -608,27 +645,9 @@
         <a class="footer-contacts-link" href="tel:+380111111111" target="_blank">+380-11-1111-111</a>
     </div>
 </div>
-  </footer>
-  <!-- Mobile Menu -->
-<div class="mobile-menu">
-    <div class="mobile-menu-container">
+    </footer>
 
-        <button class="mobile-menu-close-btn">
-            <svg class="icon-close" width="28" height="28">
-                <use href="/portfolio/assets/icons-cc81a67f.svg#icon-x">
-                </use>
-            </svg>
-        </button>
-        <ul class="mobile-nav-menu">
-            <li class="mobile-menu-elem"><a class="menu-elem " href="#about-me">About me</a></li>
-            <li class="mobile-menu-elem"><a class="menu-elem" href="#benefits">Benefits</a></li>
-            <li class="mobile-menu-elem"><a class="menu-elem" href="#projects">Projects</a></li>
-            <li class="mobile-menu-elem"><a class="menu-elem" href="#FAQ">FAQ</a>
-        </ul>
-        <a href="#footer" class="mobile-order-link">Order the project</a>
-    </div>
-</div>
-  <div class="backdrop" id="backdrop">
+    <div class="backdrop" id="backdrop">
   <div class="modal">
 
     <button class="modal-close-btn" type="button" id="modal-close-btn">
@@ -643,11 +662,8 @@
   </div>
 </div>
 
-  <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
-
-
-</body>
-
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  </body>
 </html>
