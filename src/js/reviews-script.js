@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', async event => {
 
   try {
     const info = await getReviews();
-    console.log('Fetched reviews:', info);
     updateCards(info);
     // Initialize swiper after reviews are filled in the DOM
   } catch (error) {

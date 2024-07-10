@@ -46,3 +46,9 @@ function updateNavigationButtons() {
     prevButton.removeAttribute('disabled');
   }
 }
+
+document.querySelectorAll('.swiper3 .swiper-slide img').forEach(image => {
+  image.addEventListener('click', () => {
+    swiper2.slideNext();
+  });
+});
