@@ -23,7 +23,7 @@ async function onFormSubmit() {
     localStorage.setItem('comment', '');
     form.reset();
   } catch {
-    notification('error', 'Server Error', 'Please, try again.');
+    notification('error', 'Error', 'Server is not responding.');
   }
 }
 
