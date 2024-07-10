@@ -1,7 +1,20 @@
 import { getReviews } from './reviews-api-request';
 import { notification } from './footer-notification';
+import { swiperInitialize } from './reviews-swiper';
 
 const cards = document.querySelector('.cards');
+
+function scroll(elements) {
+  elements.forEach(element => {
+    element.addEventListener('click', () => {
+      if (element.classList.contains('review-scroll')) {
+        element.classList.remove('review-scroll');
+      } else {
+        element.classList.add('review-scroll');
+      }
+    });
+  });
+}
 
 document.addEventListener('DOMContentLoaded', async event => {
   event.preventDefault();
@@ -9,6 +22,9 @@ document.addEventListener('DOMContentLoaded', async event => {
     const info = await getReviews();
     const markup = createMarkup(info);
     cards.innerHTML = markup;
+    const text = document.querySelectorAll('.message');
+    scroll(text);
+    swiperInitialize();
   } catch (error) {
     notification('error', 'Error', 'Loading reviews failed.');
     cards.innerHTML = 'Not found';

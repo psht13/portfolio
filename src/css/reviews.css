@@ -116,6 +116,7 @@ body {
 }
 
 .message {
+  cursor: pointer;
   text-overflow: ellipsis;
   overflow-y: hidden;
   max-height: 120px;
@@ -123,6 +124,10 @@ body {
   line-height: 24px;
   color: #fafafa;
   opacity: 0.6;
+}
+
+.review-scroll {
+  overflow-y: auto;
 }
 
 .photo {
