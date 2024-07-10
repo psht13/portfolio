@@ -13,11 +13,11 @@ animations. Built using vanilla JavaScript, Vite, and various JS libraries.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/portfolio-web-app.git
+   git clone https://github.com/psht13/portfolio.git
    ```
 2. **Navigate to the project directory:**
    ```bash
-   cd portfolio-web-app
+   cd portfolio
    ```
 3. **Install dependencies:**
    ```bash
