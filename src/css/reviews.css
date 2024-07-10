@@ -98,14 +98,18 @@ body {
   max-width: 344px;
 }
 
-@media screen and (min-width: 768px) {
-  .card {
-    width: calc((100% - 30px) / 2);
-  }
+.photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  margin-bottom: 32px;
 }
 
+/* .text-content-reviews{
+
+} */
+
 .name {
-  /* margin-bottom: 32px; */
   color: rgb(250, 250, 250);
   text-align: left;
   letter-spacing: -0.02em;
@@ -115,14 +119,18 @@ body {
   margin-bottom: 8px;
 }
 
+
 .message {
   text-overflow: ellipsis;
   overflow-y: hidden;
   max-height: 120px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  /* text-align: left; */
   color: #fafafa;
+  font-weight: 500;
   opacity: 0.6;
+  letter-spacing: -0.02em;
 }
 
 .photo {
@@ -133,7 +141,7 @@ body {
 }
 /* 
 ================================================= */
-
+/* 
 body {
   background: #1c1d20;
   font-family: 'Inter Tight', sans-serif;
@@ -151,7 +159,24 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+} */
+
+/* .container-reviews {
+     max-width: 375px; 
+    padding: 0 16px;
+    margin: 0 auto;
+}  */
+
+/* .reviews-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
 }
+
 
 .card {
   display: flex;
@@ -161,12 +186,12 @@ body {
   border-radius: 20px;
   background-color: transparent;
   padding: 32px 24px 32px 24px;
-  /* gap: 32px; */
+  
   height: 302px;
   width: 332px;
-}
+} */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .card {
     width: calc((100% - 30px) / 2);
   }
@@ -174,7 +199,7 @@ body {
 
 .name {
   /* margin-bottom: 32px; */
-  color: rgb(250, 250, 250);
+  /* color: rgb(250, 250, 250);
   text-align: left;
   letter-spacing: -0.02em;
   font-size: 20px;
@@ -189,7 +214,7 @@ body {
   line-height: 24px;
   color: #fafafa;
   opacity: 0.6;
-}
+}  */
 
 .swiper3 {
   overflow: hidden;
