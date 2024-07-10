@@ -1,5 +1,7 @@
 import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
+import AOS from 'aos';
+
 import './js/covers';
 import './js/modal';
 import './js/modal-handlers';

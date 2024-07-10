@@ -1,8 +1,12 @@
 /* main styles */
+@import 'modern-normalize/modern-normalize.css';
+@import 'aos/dist/aos.css';
+@import 'swiper/css/bundle';
+@import 'izitoast/dist/css/iziToast.min.css';
+@import 'accordion-js/dist/accordion.min.css';
+@import url('./fonts.css');
 @import url('./reset.css');
 @import url('./general.css');
-@import 'accordion-js/dist/accordion.min.css';
-@import 'swiper/css';
 @import url('./about-me.css');
 @import url('./benefits.css');
 @import url('./covers.css');

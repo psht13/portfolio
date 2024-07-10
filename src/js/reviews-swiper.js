@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 const swiper3 = new Swiper('.swiper3', {
   slidesPerView: 4,
   spaceBetween: 24,

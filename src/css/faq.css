@@ -1,6 +1,6 @@
 body {
-  background: #1C1D20;
-  font-family: 'Inter Tight', sans-serif;
+  background: #1c1d20;
+  font-family: 'InterTight', sans-serif;
 }
 
 .h2 {
@@ -27,13 +27,12 @@ body {
 .faq-svg-icon {
   stroke: #fafafa;
   fill: none;
-  
 }
 
 .faq-list-title {
   width: 265px;
   line-height: 1.5;
-  color: #FAFAFA;
+  color: #fafafa;
   text-align: left;
   letter-spacing: -0.02em;
   font-size: 20px;
@@ -52,18 +51,18 @@ body {
   border-bottom: 1px solid #fafafa20;
 }
 
-.first{
+.first {
   padding-top: 20px;
   border-top: 1px solid #fafafa20;
 }
 
 .faq-list-item-text {
-line-height: 1.5;
-color: rgba(250, 250, 250, 0.6);
-text-align: left;
-letter-spacing: -0.02em;
+  line-height: 1.5;
+  color: rgba(250, 250, 250, 0.6);
+  text-align: left;
+  letter-spacing: -0.02em;
   font-size: 16px;
-font-weight: 500;
+  font-weight: 500;
 }
 .faq-btn-svg-icon {
   display: flex;
@@ -84,11 +83,9 @@ font-weight: 500;
   transition: 0.5s ease;
 }
 
+/* General tablet styles */
 
-  /* General tablet styles */
-  
-  @media screen and (min-width: 768px) {
-
+@media screen and (min-width: 768px) {
   .first {
     padding-top: 32px;
   }
@@ -116,9 +113,9 @@ font-weight: 500;
     padding-top: 16px;
   }
 
-   .first-text {
+  .first-text {
     height: 96px;
-   }
+  }
 
   .faq-btn-svg-icon {
     width: 40px;
@@ -126,7 +123,7 @@ font-weight: 500;
   }
 
   .faq-title-button {
-    padding-bottom: 0;;
+    padding-bottom: 0;
   }
 
   .faq-btn-svg-icon {
@@ -140,24 +137,22 @@ font-weight: 500;
   transition: 500ms ease-in-out;
 }
 .faq-text-wrap {
-overflow: hidden;
-max-height: 0;
-transition: max-height 500ms ease;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 500ms ease;
 }
 
 .accordion.active .faq-svg-icon {
   transform: rotate(180deg);
 }
 
-  /* General desktop styles */
-  @media screen and (min-width: 1440px) {
-
+/* General desktop styles */
+@media screen and (min-width: 1440px) {
   .faq-wrapper {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     /* justify-content: space-between; */
-    
   }
 
   .first-text {
@@ -174,21 +169,21 @@ transition: max-height 500ms ease;
     padding-top: 32px;
     padding-bottom: 26px;
     padding-left: 31px;
-  } 
+  }
 
   .faq-list-item-first {
     border-right: 1px solid #fafafa20;
-  } 
+  }
 
   .faq-list-item-second {
     border-left: 1px solid #fafafa20;
-  } 
+  }
 
-   .btn-pad {
+  .btn-pad {
     padding-bottom: 20px;
   }
 
-.faq-list-item-text.last-text {
-  padding-top: 24px;
+  .faq-list-item-text.last-text {
+    padding-top: 24px;
+  }
 }
-} 

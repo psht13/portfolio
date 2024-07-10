@@ -1,3 +1,4 @@
+import Swiper from 'swiper/bundle';
 
 const swiper2 = new Swiper('.swiper2', {
   direction: 'horizontal',
@@ -7,22 +8,22 @@ const swiper2 = new Swiper('.swiper2', {
     enabled: true,
   },
   mousewheel: true,
-    effect: 'flip',  
-    flipEffect: {
+  effect: 'flip',
+  flipEffect: {
     slideShadows: true,
     limitRotation: true,
-  }, 
-      
+  },
+
   navigation: {
     nextEl: '.project-button-next',
     prevEl: '.project-button-prev',
   },
 });
 
- function updateNavigationButtons() {
+function updateNavigationButtons() {
   const nextButton = document.querySelector('.project-button-next');
   const prevButton = document.querySelector('.project-button-prev');
-  
+
   if (swiper2.isEnd) {
     nextButton.classList.add('project-button-disabled');
     nextButton.setAttribute('disabled', true);
@@ -41,7 +42,7 @@ const swiper2 = new Swiper('.swiper2', {
 }
 
 swiper2.on('slideChange', updateNavigationButtons);
-updateNavigationButtons(); 
+updateNavigationButtons();
 
 document.querySelectorAll('.swiper2 .swiper-slide img').forEach(image => {
   image.addEventListener('click', () => {
