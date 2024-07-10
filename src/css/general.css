@@ -61,6 +61,6 @@ section {
     max-width: 1440px;
   }
   section {
-    padding: 82px;
+    padding: 82px 0;
   }
 }
